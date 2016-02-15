@@ -2,6 +2,10 @@ html{
   box-sizing: border-box;
 }
 
+body {
+  background-color: #E7E7E7;
+}
+
 .container {
   width: 90%;
   margin: auto;
@@ -9,6 +13,7 @@ html{
   /*NAV BAR*/
 
 ul {
+  margin-top: 10%;
   border-top: 1px solid black;
   list-style: none;
   padding-left: 0;
@@ -43,26 +48,45 @@ li span {
 
   /*MAIN CONTENT*/
 
-article{
+article {
   clear: both;
+  font-family: Cambria, Georgia, serif;
 }
 
-article h1{
+article p {
+  font-size: 1.8em;
+  line-height: 2em;
+  color: rgba(0, 0, 0, 0.82);
+  text-shadow: 1px 1px 0 white;
+}
+
+article h1 {
   margin: 0;
+  font-size: 4em;
+  text-align: center;
+  font-weight: 300;
 }
 
-.wrapper a img{
-  min-width: 50%;
+.logo a img {
+  min-width: 100%;
 }
 
-.wrapper{
+.wrapper {
   position: relative;
   height: 300px;
   clear: both;
 }
-.centered{
+.centered {
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 50%;
+  height: 300px;
+  /*background-image: url("../img/logo-bg.png");*/
+  background-position: center center;
+  background-repeat: no-repeat;
 }
