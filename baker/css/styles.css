@@ -1,29 +1,33 @@
-html{
+*{
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   background-color: #E7E7E7;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  font-family: Cambria, Georgia, serif;
+  color: rgba(0, 0, 0, 0.82);
 }
 
 .container {
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
   /*NAV BAR*/
 
-ul {
-  margin-top: 10%;
+header ul {
+  margin-top: 10.5%;
   border-top: 1px solid black;
   list-style: none;
   padding-left: 0;
 }
 
-ul li {
+header ul li {
   float: left;
   margin-right: 3.4%;
   width: 31%;
-  font-size: 1.7em;
+  font-size: 1.9em;
   font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -50,21 +54,20 @@ li span {
 
 article {
   clear: both;
-  font-family: Cambria, Georgia, serif;
-}
-
-article p {
-  font-size: 1.8em;
-  line-height: 2em;
-  color: rgba(0, 0, 0, 0.82);
   text-shadow: 1px 1px 0 white;
 }
 
+article p {
+  margin-top: 1.5%;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
 article h1 {
-  margin: 0;
-  font-size: 4em;
+  font-size: 3.1em;
   text-align: center;
   font-weight: 300;
+  letter-spacing: .02em;
 }
 
 .logo a img {
@@ -73,9 +76,10 @@ article h1 {
 
 .wrapper {
   position: relative;
-  height: 300px;
+  height: 350px;
   clear: both;
 }
+
 .centered {
 position: absolute;
 top: 50%;
@@ -84,9 +88,56 @@ transform: translate(-50%, -50%);
 }
 
 .logo {
-  width: 50%;
+  width: 48%;
   height: 300px;
   /*background-image: url("../img/logo-bg.png");*/
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+  /*GALLERY*/
+.gallery-header {
+  margin: 6% 0;
+  width: 100%;
+  position: relative;
+  height: 37px;
+  background-image: url("../img/ornament.png")
+}
+
+.gallery-header h2 {
+  margin: 0;
+  width: 70%;
+  padding: 4%;
+  font-size: 4.4em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #E7E7E7;
+  font-weight: normal;
+}
+.gallery ul{
+  padding-left: 0;
+}
+
+.gallery ul li{
+  list-style: none;
+  float: left;
+  width: 45%;
+  margin: 3% 2.5%;
+
+}
+
+
+.gallery a {
+  padding: 0;
+
+}
+
+.gallery ul li a img{
+  border-radius: 5%;
+  width: 100%;
+  box-shadow: 0 10px 5px gray;
+}
+
+.gallery span {
+  font-size: 3em;
 }
