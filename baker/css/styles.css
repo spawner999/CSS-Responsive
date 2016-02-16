@@ -25,6 +25,7 @@ a{
   /*NAV BAR*/
 
 header ul {
+  width: 100%;
   margin-top: 10.5%;
   border-top: 1px solid black;
   list-style: none;
@@ -73,6 +74,7 @@ article h1 {
   text-align: center;
   font-weight: 300;
   letter-spacing: .02em;
+  margin-bottom: 10px;
 }
 
 .logo a img {
@@ -82,41 +84,44 @@ article h1 {
 .wrapper {
   position: relative;
   height: 100px;
-  clear: both;
+}
+
+.right {
+  margin-top: 50px;
 }
 
 .centered {
 position: absolute;
-top: 50%;
+top: 52%;
 left: 50%;
-transform: translate(-50%, -50%);
+transform: translate(-52%, -50%);
 }
 
 .logo {
-  width: 48%;
-  height: 300px;
+  clear: both;
+  position: relative;
+  width: 100%;
+  height: 113px;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
   /*GALLERY*/
-.gallery-header {
+.divider {
   clear: both;
   background-position: center;
   background-size: 600%;
-  margin: 6% 0;
+  margin: 3% 0;
   width: 100%;
   position: relative;
   height: 30px;
   background-image: url("../img/ornament.png")
 }
 
-.gallery-header h2 {
-  margin: 0;
+.divider h2 {
   width: 70%;
-  padding: 4%;
+  padding: 1%;
   text-align: center;
-  vertical-align: middle;
   background-color: #E7E7E7;
   font-weight: normal;
 }
@@ -132,13 +137,11 @@ transform: translate(-50%, -50%);
   margin: 2.8% 1%;
 }
 
-
 .gallery a {
   padding: 0;
   font-size: 10px;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .gallery ul li a img{
@@ -147,6 +150,7 @@ transform: translate(-50%, -50%);
   width: 100%;
   box-shadow: 0 10px 5px gray;
 }
+
 .gallery span{
   letter-spacing: 0.2em;
   font-size: 1.2em;
@@ -167,31 +171,88 @@ footer{
 @media screen and (min-width: 400px) {
   .gallery ul li {
     width: 30%;
-    margin: 2.8% 1.65%;
+    margin: 1% 1.65%;
   }
 }
 
 @media screen and (min-width: 601px) {
-  header ul {
-    clear: both;
-    width: 60%;
-    margin: auto;
+  .container{
+    margin: 0 1%;
   }
-  header ul li{
-    width: 100%;
-  }
-  .logo{
-    width: 100%;
-    background-image: url("../img/logo-bg.png");
-  }
+
   .left{
     width: 31%;
     float: left;
   }
+
+  header ul {
+    position: absolute;
+    top: 300px;
+    width: 60%;
+    margin: 0 15%;
+  }
+
+  header ul li{
+    width: 100%;
+  }
+
+  header ul li a{
+    font-size: 14px;
+  }
+
+  .logo{
+    margin-top: 30px;
+    height: 300px;
+    width: 100%;
+    background-image: url("../img/logo-bg.png");
+  }
+
   .right{
-    width: 65%;
+    margin-top: 125px;
+    width: 64%;
     float: left;
   }
 
+  .right h1{
+    margin: 3% 0;
+    font-size: 31px;
+  }
 
+  .divider h2{
+    width: 50%;
+  }
+
+  .gallery ul li{
+    margin-bottom: 3%;
+  }
+
+  .divider{
+    background-size: 300%;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  header ul {
+    position: absolute;
+    top: 0;
+    left:92%;
+    width: 209%;
+    margin: 0 15%;
+  }
+
+  header ul li{
+    width: 31%;
+  }
+
+  .gallery ul li {
+    width: 13.9%;
+    margin: 1% 1.38%;
+  }
+  .divider{
+    background-size: 225%;
+  }
+
+  .divider h2{
+    width: 30%;
+  }
 }
